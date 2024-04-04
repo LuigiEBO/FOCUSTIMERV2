@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script type="module" src="./script.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <div class="timer">
+        <div id="time">
+          <span id="minutes">00</span>
+          <span>:</span>
+          <span id="seconds">00</span>
+        </div>
+        <div id="controls">
+          <button
+            data-action="toggleRunning"
+            class="ph ph-play-circle"
+          ></button>
+          <button
+            data-action="toggleRunning"
+            class="ph ph-stop-circle"
+          ></button>
+          <button data-action="plus" class="ph ph-plus-circle"></button>
+          <button data-action="minus" class="ph ph-minus-circle"></button>
+        </div>
+      </div>
+      <div class="buttons">
+        <div class="up">
+          <button class="ph ph-tree"></button>
+          <button class="ph ph-cloud-rain"></button>
+        </div>
+        <div class="down">
+          <button class="ph ph-storefront"></button>
+          <button class="ph ph-fire"></button>
+        </div>
+        <div class="ph ph-pause"></div>
+      </div>
+    </main>
+  </body>
+</html>

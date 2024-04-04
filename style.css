@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-size: 62.5%;
+}
+body {
+  background-color: #fff;
+  display: grid;
+  place-content: center;
+  height: 100vh;
+}
+main {
+  gap: 30rem;
+  justify-content: center;
+}
+.timer {
+  text-align: center;
+}
+#time {
+  font-size: 8rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+.running .ph-play-circle,
+html:not(.running) .ph-pause-circle,
+html:not(.running) .ph-stop-circle {
+  display: none;
+}
+
+#controls button {
+  border: none;
+  background: none;
+  font-size: 4rem;
+  margin-right: 3rem;
+  cursor: pointer;
+}
+.buttons {
+  display: flex;
+  flex-direction: column;
+}
+.buttons button {
+  border: none;
+  background-color: #e1e1e6;
+  border-radius: 0.8rem;
+  font-size: 3rem;
+  padding: 2.4rem;
+  margin-right: 2rem;
+  margin-left: 2rem;
+  margin-bottom: 3rem;
+  cursor: pointer;
+  align-items: center;
+}
+
+.buttons button.select {
+  background-color: #02799d;
+}
+.buttons .ph-pause {
+  font-size: 3rem;
+  margin: auto;
+}
+
+@media (min-width: 500px) {
+  #time {
+    font-size: 10rem;
+  }
+  #controls button {
+    font-size: 7rem;
+  }
+  .buttons button {
+    font-size: 7rem;
+  }
+  .buttons .ph-pause {
+    font-size: 7rem;
+  }
+}
+@media (min-width: 1000px) {
+  main {
+    display: flex;
+  }
+}
